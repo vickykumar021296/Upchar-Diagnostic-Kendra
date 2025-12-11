@@ -2,35 +2,59 @@
    Upchar Diagnostic Center - JavaScript Functionality
    ============================================ */
 
-// Mobile Menu Toggle
+// Mobile Menu Toggle with Backdrop
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
+    
+    // Create backdrop element if it doesn't exist
+    let backdrop = document.querySelector('.nav-menu-backdrop');
+    if (!backdrop) {
+        backdrop = document.createElement('div');
+        backdrop.className = 'nav-menu-backdrop';
+        document.body.appendChild(backdrop);
+    }
+
+    function openMenu() {
+        navMenu.classList.add('active');
+        backdrop.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent body scroll when menu is open
+    }
+
+    function closeMenu() {
+        navMenu.classList.remove('active');
+        backdrop.classList.remove('active');
+        document.body.style.overflow = ''; // Restore body scroll
+    }
 
     if (menuToggle && navMenu) {
         menuToggle.addEventListener('click', function(e) {
             e.stopPropagation();
-            navMenu.classList.toggle('active');
+            if (navMenu.classList.contains('active')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        // Close menu when clicking on backdrop
+        backdrop.addEventListener('click', function() {
+            closeMenu();
         });
 
         // Close menu when clicking on a link
         const navLinks = document.querySelectorAll('.nav-menu a');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
-                navMenu.classList.remove('active');
+                closeMenu();
             });
         });
 
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-                navMenu.classList.remove('active');
+        // Close menu on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                closeMenu();
             }
-        });
-
-        // Prevent menu from closing when clicking inside it
-        navMenu.addEventListener('click', function(e) {
-            e.stopPropagation();
         });
     }
 
@@ -356,19 +380,9 @@ function initPopularTestsSlider() {
 
     function updateSlider() {
         const cardsPerView = getCardsPerView();
-        const cardWidth = testCards[0].offsetWidth + 16; // card width + gap (1rem = 16px)
-        const wrapper = slider.parentElement;
-        const wrapperWidth = wrapper ? wrapper.offsetWidth : window.innerWidth;
-        
-        if (window.innerWidth <= 768) {
-            // On mobile, center the card
-            const cardGap = 16; // 1rem gap
-            const translateX = -currentIndex * (cardWidth + cardGap) + (wrapperWidth - cardWidth) / 2 - 32; // 32px for padding
-            slider.style.transform = `translateX(${translateX}px)`;
-        } else {
-            const translateX = -currentIndex * cardWidth * cardsPerView;
-            slider.style.transform = `translateX(${translateX}px)`;
-        }
+        const cardWidth = testCards[0].offsetWidth + 12; // card width + gap (0.75rem = 12px)
+        const translateX = -currentIndex * cardWidth * cardsPerView;
+        slider.style.transform = `translateX(${translateX}px)`;
     }
 
     function nextSlide() {
@@ -472,19 +486,9 @@ function initWhyChooseUsSlider() {
 
     function updateSlider() {
         const cardsPerView = getCardsPerView();
-        const cardWidth = featureCards[0].offsetWidth + 16; // card width + gap (1rem = 16px)
-        const wrapper = slider.parentElement;
-        const wrapperWidth = wrapper ? wrapper.offsetWidth : window.innerWidth;
-        
-        if (window.innerWidth <= 768) {
-            // On mobile, center the card
-            const cardGap = 16; // 1rem gap
-            const translateX = -currentIndex * (cardWidth + cardGap) + (wrapperWidth - cardWidth) / 2 - 32; // 32px for padding
-            slider.style.transform = `translateX(${translateX}px)`;
-        } else {
-            const translateX = -currentIndex * cardWidth * cardsPerView;
-            slider.style.transform = `translateX(${translateX}px)`;
-        }
+        const cardWidth = featureCards[0].offsetWidth + 12; // card width + gap (0.75rem = 12px)
+        const translateX = -currentIndex * cardWidth * cardsPerView;
+        slider.style.transform = `translateX(${translateX}px)`;
     }
 
     function nextSlide() {

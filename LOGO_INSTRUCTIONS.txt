@@ -1,0 +1,35 @@
+===========================================
+LOGO SETUP INSTRUCTIONS
+===========================================
+
+To add your company logo to the website:
+
+1. Place your logo image file in: assets/images/logo.png
+   - Recommended format: PNG with transparent background
+   - Recommended size: 200-300px width, auto height
+   - File name must be: logo.png
+
+2. The logo will automatically appear in the navigation bar on all pages
+   - If the logo file exists, it will be displayed
+   - If the logo file doesn't exist, the text "Upchar Diagnostic Center" will be shown instead
+
+3. Supported image formats:
+   - PNG (recommended for transparency)
+   - JPG/JPEG
+   - SVG (scalable vector graphics)
+
+4. Logo styling:
+   - Maximum height: 50px (desktop)
+   - Maximum height: 40px (mobile)
+   - Width: Auto (maintains aspect ratio)
+
+5. To change the logo:
+   - Simply replace the file at assets/images/logo.png with your new logo
+   - Make sure the new file is named "logo.png"
+   - Clear your browser cache to see the updated logo
+
+===========================================
+NOTE: The logo feature is already implemented and ready to use.
+Just add your logo file to the specified location!
+===========================================
+

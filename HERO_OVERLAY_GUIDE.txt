@@ -1,0 +1,133 @@
+===========================================
+HERO SLIDER OVERLAY COLOR CONTROL GUIDE
+===========================================
+
+The hero slider has an overlay that appears on top of the images to improve text readability.
+You can customize this overlay in the file: assets/css/style.css
+
+Location: Look for the .hero-overlay class (around line 180)
+
+===========================================
+CURRENT SETTING:
+===========================================
+Gradient overlay: Blue to Green (70% opacity)
+background: linear-gradient(135deg, rgba(74, 144, 226, 0.7) 0%, rgba(168, 230, 207, 0.7) 100%);
+
+===========================================
+HOW TO CHANGE THE OVERLAY:
+===========================================
+
+1. OPEN: assets/css/style.css
+2. FIND: .hero-overlay class
+3. MODIFY: The background property
+
+===========================================
+OPTION 1: GRADIENT OVERLAY (Current)
+===========================================
+background: linear-gradient(135deg, rgba(74, 144, 226, 0.7) 0%, rgba(168, 230, 207, 0.7) 100%);
+
+To customize:
+- Change colors: Modify the rgba() values
+- Change direction: Change 135deg (45deg = horizontal, 90deg = vertical, 180deg = reverse)
+- Change opacity: Modify the last number (0.7 = 70%, 0.5 = 50%, etc.)
+
+Examples:
+- Blue to Purple: linear-gradient(135deg, rgba(74, 144, 226, 0.7) 0%, rgba(147, 51, 234, 0.7) 100%);
+- Red to Orange: linear-gradient(135deg, rgba(239, 68, 68, 0.7) 0%, rgba(249, 115, 22, 0.7) 100%);
+- Dark to Light Blue: linear-gradient(135deg, rgba(30, 58, 138, 0.7) 0%, rgba(59, 130, 246, 0.7) 100%);
+
+===========================================
+OPTION 2: SOLID COLOR OVERLAY
+===========================================
+Replace the gradient with a solid color:
+
+Examples:
+- Dark overlay (50% black): background: rgba(0, 0, 0, 0.5);
+- Blue overlay (60% blue): background: rgba(74, 144, 226, 0.6);
+- Green overlay (60% green): background: rgba(168, 230, 207, 0.6);
+- White overlay (30% white): background: rgba(255, 255, 255, 0.3);
+- Red overlay (50% red): background: rgba(255, 0, 0, 0.5);
+
+Color Format: rgba(Red, Green, Blue, Opacity)
+- Red, Green, Blue: 0-255 (0 = none, 255 = full)
+- Opacity: 0.0-1.0 (0.0 = transparent, 1.0 = fully opaque)
+
+Common Colors:
+- Black: rgba(0, 0, 0, 0.5)
+- White: rgba(255, 255, 255, 0.3)
+- Blue: rgba(74, 144, 226, 0.6)
+- Green: rgba(168, 230, 207, 0.6)
+- Purple: rgba(147, 51, 234, 0.6)
+- Red: rgba(239, 68, 68, 0.6)
+- Orange: rgba(249, 115, 22, 0.6)
+
+===========================================
+OPTION 3: REMOVE OVERLAY COMPLETELY
+===========================================
+To remove the overlay and show images without any color filter:
+
+background: none;
+display: none;
+
+OR simply comment out the background line:
+/* background: linear-gradient(...); */
+
+===========================================
+OPACITY CONTROL:
+===========================================
+The last number in rgba() controls how transparent/opaque the overlay is:
+
+- 0.0 = Completely transparent (no overlay effect)
+- 0.3 = 30% opacity (light overlay)
+- 0.5 = 50% opacity (medium overlay)
+- 0.7 = 70% opacity (strong overlay - current setting)
+- 1.0 = 100% opacity (completely opaque - image won't be visible)
+
+Recommended: 0.5 to 0.7 for good text readability while keeping images visible
+
+===========================================
+QUICK REFERENCE - COMMON SETTINGS:
+===========================================
+
+1. Dark overlay (best for light images):
+   background: rgba(0, 0, 0, 0.5);
+
+2. Light overlay (best for dark images):
+   background: rgba(255, 255, 255, 0.3);
+
+3. Blue overlay (matches your brand):
+   background: rgba(74, 144, 226, 0.6);
+
+4. No overlay (show images as-is):
+   background: none;
+   display: none;
+
+5. Current gradient (blue to green):
+   background: linear-gradient(135deg, rgba(74, 144, 226, 0.7) 0%, rgba(168, 230, 207, 0.7) 100%);
+
+===========================================
+STEP-BY-STEP INSTRUCTIONS:
+===========================================
+
+To change to a dark overlay:
+1. Open: assets/css/style.css
+2. Find: .hero-overlay class
+3. Replace the background line with:
+   background: rgba(0, 0, 0, 0.5);
+4. Save the file
+5. Refresh your browser
+
+To change opacity only:
+1. Find the current background line
+2. Change the last number (0.7) to your desired opacity
+   Example: Change 0.7 to 0.5 for lighter overlay
+3. Save and refresh
+
+To remove overlay:
+1. Find the background line
+2. Add /* before it and */ after it to comment it out
+3. Add: display: none;
+4. Save and refresh
+
+===========================================
+

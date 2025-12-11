@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upchar Diagnostic Center - Home sample collection diagnostic service in Delhi NCR. Book your tests online, get samples collected at home.">
+    <title>Upchar Diagnostic Center - Home Sample Collection | Delhi NCR</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Scrolling Banner -->
+    <div class="scrolling-banner">
+        <div class="scrolling-content">
+            <span>🎉 Special Offer: Get 20% off on all health packages this month! Book now and save big.</span>
+            <span>📞 Call us at +91 98765 43210 for instant booking and home sample collection.</span>
+            <span>🏠 Free home sample collection available across Delhi NCR. Book your test today!</span>
+            <span>⚡ Quick Results: Get your test reports within 24-48 hours. Fast and accurate!</span>
+            <!-- Duplicate content for seamless loop -->
+            <span>🎉 Special Offer: Get 20% off on all health packages this month! Book now and save big.</span>
+            <span>📞 Call us at +91 98765 43210 for instant booking and home sample collection.</span>
+            <span>🏠 Free home sample collection available across Delhi NCR. Book your test today!</span>
+            <span>⚡ Quick Results: Get your test reports within 24-48 hours. Fast and accurate!</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Upchar Diagnostic Center" class="logo-img" id="companyLogo" style="display: none; max-height: 50px; width: auto;">
+                <span class="logo-text">Upchar Diagnostic Center</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="collection.html">Home Collection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <!-- Hero Slider: Images are automatically loaded from assets/images/hero-slider/ folder
+                 Name your images as: image1.jpg, image2.jpg, image3.jpg, ... image10.jpg
+                 Supported formats: .jpg, .jpeg, .png, .webp
+                 Only available images will be displayed automatically. -->
+            <div class="hero-slide" data-image="1"></div>
+            <div class="hero-slide" data-image="2"></div>
+            <div class="hero-slide" data-image="3"></div>
+            <div class="hero-slide" data-image="4"></div>
+            <div class="hero-slide" data-image="5"></div>
+            <div class="hero-slide" data-image="6"></div>
+            <div class="hero-slide" data-image="7"></div>
+            <div class="hero-slide" data-image="8"></div>
+            <div class="hero-slide" data-image="9"></div>
+            <div class="hero-slide" data-image="10"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+        </div>
+        <input type="file" id="prescriptionUpload" accept="image/*,.pdf" style="display: none;">
+        <div class="hero-buttons">
+            <button class="btn btn-upload" id="uploadPrescriptionBtn">
+                <span class="upload-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 15V3M12 3L8 7M12 3L16 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L2 19C2 20.1046 2.89543 21 4 21L20 21C21.1046 21 22 20.1046 22 19L22 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span>Upload Prescription</span>
+            </button>
+            <a href="contact.html" class="btn btn-primary">Book Test</a>
+            <a href="tel:+919876543210" class="btn btn-secondary">Call Now</a>
+            <a href="https://wa.me/919876543210" class="btn btn-success">WhatsApp</a>
+        </div>
+        <div class="hero-slider-controls">
+            <button class="slider-nav prev" aria-label="Previous slide">‹</button>
+            <button class="slider-nav next" aria-label="Next slide">›</button>
+            <!-- Slider dots are automatically generated based on available images -->
+            <div class="slider-dots">
+                <!-- Dots will be dynamically created by JavaScript based on valid slides -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Test Packages -->
+    <section class="section popular-tests">
+        <h2 class="section-title">Popular Tests</h2>
+        <div class="tests-slider-container">
+            <button class="test-slider-nav test-slider-prev" aria-label="Previous test">‹</button>
+            <div class="tests-slider-wrapper">
+                <div class="tests-slider">
+                    <div class="test-card">
+                        <h3>Whole Body PET-CT Scan (FDG)</h3>
+                        <div class="test-price">₹ 11,999</div>
+                        <div class="test-details">
+                            <span class="test-info">📋 1 Test Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>CBC Test</h3>
+                        <div class="test-price">₹ 199</div>
+                        <div class="test-details">
+                            <span class="test-info">🔬 25 Parameter Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>Ultrasound Whole Abdomen</h3>
+                        <div class="test-price">₹ 999</div>
+                        <div class="test-details">
+                            <span class="test-info">📋 1 Test Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>Complete Health Package</h3>
+                        <div class="test-price">₹ 1,999</div>
+                        <div class="test-details">
+                            <span class="test-info">🔬 Multiple Tests Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT 24-48 Hours</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>Diabetes Care Package</h3>
+                        <div class="test-price">₹ 899</div>
+                        <div class="test-details">
+                            <span class="test-info">🔬 5 Tests Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>Women's Health Package</h3>
+                        <div class="test-price">₹ 1,499</div>
+                        <div class="test-details">
+                            <span class="test-info">🔬 8 Tests Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT 24 Hours</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>Cardiac Care Package</h3>
+                        <div class="test-price">₹ 1,299</div>
+                        <div class="test-details">
+                            <span class="test-info">🔬 6 Tests Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>Vitamin Profile</h3>
+                        <div class="test-price">₹ 1,199</div>
+                        <div class="test-details">
+                            <span class="test-info">🔬 4 Tests Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>Thyroid Profile</h3>
+                        <div class="test-price">₹ 599</div>
+                        <div class="test-details">
+                            <span class="test-info">🔬 3 Tests Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>Liver Function Test (LFT)</h3>
+                        <div class="test-price">₹ 699</div>
+                        <div class="test-details">
+                            <span class="test-info">🔬 10 Tests Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>Kidney Function Test (KFT)</h3>
+                        <div class="test-price">₹ 799</div>
+                        <div class="test-details">
+                            <span class="test-info">🔬 8 Tests Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>Lipid Profile</h3>
+                        <div class="test-price">₹ 499</div>
+                        <div class="test-details">
+                            <span class="test-info">🔬 5 Tests Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>ECG Test</h3>
+                        <div class="test-price">₹ 299</div>
+                        <div class="test-details">
+                            <span class="test-info">📋 1 Test Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>X-Ray Chest PA View</h3>
+                        <div class="test-price">₹ 399</div>
+                        <div class="test-details">
+                            <span class="test-info">📋 1 Test Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>HbA1c Test</h3>
+                        <div class="test-price">₹ 449</div>
+                        <div class="test-details">
+                            <span class="test-info">🔬 1 Test Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                    <div class="test-card">
+                        <h3>Complete Blood Count (CBC) with ESR</h3>
+                        <div class="test-price">₹ 349</div>
+                        <div class="test-details">
+                            <span class="test-info">🔬 28 Parameters Included</span>
+                        </div>
+                        <div class="test-tat">
+                            <span class="tat-icon">📅</span>
+                            <span>Report TAT Same Day**</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-know-more">KNOW MORE</a>
+                    </div>
+                </div>
+            </div>
+            <button class="test-slider-nav test-slider-next" aria-label="Next test">›</button>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-choose">
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-subtitle">Experience the convenience of professional diagnostic services at your doorstep</p>
+        <div class="features-slider-container">
+            <button class="feature-slider-nav feature-slider-prev" aria-label="Previous feature">‹</button>
+            <div class="features-slider-wrapper">
+                <div class="features-slider">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏠</div>
+                        <h3>Home Collection</h3>
+                        <p>Get samples collected from the comfort of your home. No need to visit the lab.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Quick Results</h3>
+                        <p>Fast turnaround time with accurate results delivered online and via email.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✅</div>
+                        <h3>NABL Certified</h3>
+                        <p>Partnered with NABL-certified labs ensuring highest quality and accuracy.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Affordable Prices</h3>
+                        <p>Competitive pricing with special packages and discounts for regular customers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Safe & Hygienic</h3>
+                        <p>Strict safety protocols and hygiene standards for sample collection.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Easy Booking</h3>
+                        <p>Simple online booking process. Book your test in just a few clicks.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="feature-slider-nav feature-slider-next" aria-label="Next feature">›</button>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">Simple steps to get your tests done</p>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Book Online</h3>
+                <p>Fill out our simple booking form or call us to schedule your test.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Home Visit</h3>
+                <p>Our trained phlebotomist visits your home at your preferred time.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Sample Collection</h3>
+                <p>Safe and hygienic sample collection following all safety protocols.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">4</div>
+                <h3>Get Results</h3>
+                <p>Receive your test results online via email within the promised time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section">
+            <h2 class="section-title" style="color: var(--text-dark);">What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-item active">
+                    <img src="assets/images/customers/priya-sharma.jpg" alt="Priya Sharma" class="testimonial-photo">
+                    <p class="testimonial-text">"Excellent service! The phlebotomist was very professional and punctual. Got my results quickly. Highly recommended!"</p>
+                    <p class="testimonial-author">- Priya Sharma, Delhi</p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="assets/images/customers/rajesh-kumar.jpg" alt="Rajesh Kumar" class="testimonial-photo">
+                    <p class="testimonial-text">"Very convenient service. No need to wait in long queues at labs. The home collection was smooth and hassle-free."</p>
+                    <p class="testimonial-author">- Rajesh Kumar, Noida</p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="assets/images/customers/anjali-mehta.jpg" alt="Anjali Mehta" class="testimonial-photo">
+                    <p class="testimonial-text">"Affordable prices and great service. The staff was courteous and followed all safety measures. Will definitely use again."</p>
+                    <p class="testimonial-author">- Anjali Mehta, Gurgaon</p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="assets/images/customers/amit-singh.jpg" alt="Amit Singh" class="testimonial-photo">
+                    <p class="testimonial-text">"Best diagnostic service in Delhi NCR. Quick results and professional handling. Thank you for making healthcare accessible!"</p>
+                    <p class="testimonial-author">- Amit Singh, Faridabad</p>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn active"></button>
+                <button class="slider-btn"></button>
+                <button class="slider-btn"></button>
+                <button class="slider-btn"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Upchar Diagnostic Center</h3>
+                <p>Your trusted partner for diagnostic testing with convenient home sample collection across Delhi NCR.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="collection.html">Home Collection</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📞 Phone: +91 98765 43210</p>
+                <p>📧 Email: info@upchartestinglab.com</p>
+                <p>📍 Service Area: Delhi NCR</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Connect with us on social media for health tips and updates.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Upchar Diagnostic Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" aria-label="WhatsApp">💬</a>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+

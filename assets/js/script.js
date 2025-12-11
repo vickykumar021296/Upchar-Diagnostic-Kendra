@@ -356,13 +356,14 @@ function initPopularTestsSlider() {
 
     function updateSlider() {
         const cardsPerView = getCardsPerView();
-        const cardWidth = testCards[0].offsetWidth + 12; // card width + gap (0.75rem = 12px)
+        const cardWidth = testCards[0].offsetWidth + 16; // card width + gap (1rem = 16px)
         const wrapper = slider.parentElement;
         const wrapperWidth = wrapper ? wrapper.offsetWidth : window.innerWidth;
         
         if (window.innerWidth <= 768) {
             // On mobile, center the card
-            const translateX = -currentIndex * cardWidth + (wrapperWidth - cardWidth) / 2;
+            const cardGap = 16; // 1rem gap
+            const translateX = -currentIndex * (cardWidth + cardGap) + (wrapperWidth - cardWidth) / 2 - 32; // 32px for padding
             slider.style.transform = `translateX(${translateX}px)`;
         } else {
             const translateX = -currentIndex * cardWidth * cardsPerView;
@@ -471,13 +472,14 @@ function initWhyChooseUsSlider() {
 
     function updateSlider() {
         const cardsPerView = getCardsPerView();
-        const cardWidth = featureCards[0].offsetWidth + 12; // card width + gap (0.75rem = 12px)
+        const cardWidth = featureCards[0].offsetWidth + 16; // card width + gap (1rem = 16px)
         const wrapper = slider.parentElement;
         const wrapperWidth = wrapper ? wrapper.offsetWidth : window.innerWidth;
         
         if (window.innerWidth <= 768) {
             // On mobile, center the card
-            const translateX = -currentIndex * cardWidth + (wrapperWidth - cardWidth) / 2;
+            const cardGap = 16; // 1rem gap
+            const translateX = -currentIndex * (cardWidth + cardGap) + (wrapperWidth - cardWidth) / 2 - 32; // 32px for padding
             slider.style.transform = `translateX(${translateX}px)`;
         } else {
             const translateX = -currentIndex * cardWidth * cardsPerView;
